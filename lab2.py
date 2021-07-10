@@ -4,16 +4,16 @@
 once = "umbr"
 repeat = "ella"
 
-rihanna_says = ...
+rihanna_says = once + repeat + ((" " + repeat) * 2)
+print(rihanna_says)
 
 # Hint: Use both the addition and multiplication signs to make your code concise
 
 # 2.
 # Find values for x such that each print statement is reached.
 
-x = ...
+x = 0 #x = 0, 1, 6, -6
 y = 5
-
 if -1 < x / y < 1:
   if not x:
     print("Found me! x is ", x)
@@ -32,18 +32,18 @@ else:
 my_variable = 0
 for i in range(1, 10):
   # TODO add i to my_variable
-  ...
+  my_variable += i
 
   # TODO check if my_variable is even
-  if ...:
+  if my_variable % 2 == 0:
     # TODO square my_variable
-    ...
+    my_variable *= my_variable
   else:
     # TODO divide my_variable by 10
-    ...
+    my_variable /= 10
 
   # TODO check if my_variable is greater than 100
-  if ...:
+  if my_variable > 100:
     break
 
 print(my_variable)
